@@ -1,9 +1,9 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 
-import { GlobalContext } from '../context/GlobalState';
+import { GlobalContext } from '../../../Context/GlobalState';
 
-export const EditEmployee = (route) => {
+ const EditEmployee = (route) => {
   let history = useHistory();
 
   const { employees, editEmployee } = useContext(GlobalContext);
@@ -100,3 +100,4 @@ export const EditEmployee = (route) => {
     </React.Fragment>
   );
 };
+export default EditEmployee

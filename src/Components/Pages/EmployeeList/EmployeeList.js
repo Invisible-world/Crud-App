@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 
-import { GlobalContext } from '../Context/GlobalState';
+import { GlobalContext } from '../../../Context/GlobalState';
 
-export const EmployeeList = () => {
+const EmployeeList = () => {
   const { employees } = useContext(GlobalContext);
   return (
     <React.Fragment>
@@ -18,10 +18,10 @@ export const EmployeeList = () => {
                   {employee.name}
                 </p>
                 <p className="text-gray-600">
-                  {employee.designation}
+                  {employee.location}
                 </p>
                 <span className="inline-block text-sm font-semibold mt-1">
-                  {employee.location}
+                  {employee.designation}
                 </span>
               </div>
             </div>
@@ -33,3 +33,4 @@ export const EmployeeList = () => {
     </React.Fragment>
   );
 };
+export default EmployeeList

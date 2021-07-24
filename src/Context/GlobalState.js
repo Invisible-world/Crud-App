@@ -23,6 +23,7 @@ export const GlobalProvider = ({ children }) => {
       type: "ADD_EMPLOYEE",
       payload: employee
     });
+    
   }
 
   function editEmployee(employee) {
@@ -38,6 +39,7 @@ export const GlobalProvider = ({ children }) => {
       payload: id
     });
   }
+  console.log(children)
 
   return (
     <GlobalContext.Provider

@@ -1,1 +1,4 @@
 @import '~antd/dist/antd.css';
+.ant-input{
+    width:40% !important;
+}
